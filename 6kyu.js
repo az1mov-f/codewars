@@ -24,3 +24,24 @@
 // console.log(digPow(46288, 3));
 
 // ===========================================================================
+
+// 2.
+// Question:
+// https://www.codewars.com/kata/5626b561280a42ecc50000d1/javascript
+
+// Answare:
+// let sumDigPow = (a, b) => {
+//   let newArr = [];
+//   for (let i = a; i <= b; i++) {
+//     if (`${i}`.length > 1)
+//       String(i)
+//         .split("")
+//         .reduce((sum, cur, inx) => sum + (+cur) ** (inx + 1), 0) === i &&
+//         newArr.push(i);
+//     else newArr.push(i);
+//   }
+//   return newArr;
+// };
+// console.log(sumDigPow(1, 100));
+
+// ===========================================================================
