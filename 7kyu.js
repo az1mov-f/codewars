@@ -70,3 +70,22 @@
 //   return newArr.join("");
 // };
 // console.log(scramble("abcd", [0, 3, 1, 2]));
+
+// ===========================================================================
+
+// 4.
+// Question:
+// Implement a function that takes two numbers m and n and returns an array of the first m multiples of the real number n.
+// Assume that m is a positive integer.
+// Ex.
+// (3, 5.0) --> [5.0, 10.0, 15.0]
+
+// Answare:
+// let multiples = (m, n) => {
+//   let newArr = [];
+//   for (let i = 1; i <= m; i++) newArr.push(n * i);
+//   return newArr;
+// };
+// console.log(multiples(5, 6.0));
+
+// ===========================================================================
