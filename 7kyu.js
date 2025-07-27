@@ -51,3 +51,22 @@
 // console.log(missingWord([7, 10, 1], "see you later"));
 
 // ===========================================================================
+
+// 3.
+// Question:
+// Given a string and an array of indices,
+// rearrange the characters of the string so that each character is placed at the position specified by the corresponding index in the array.
+// input: "abcd", [0, 3, 1, 2];
+// output: "acdb";
+// Notes.
+// The string and the array will be of equal length.
+// The string will contain valid characters (A-Z, a-z, or 0-9);
+// the array will contain valid indices.
+
+// Answare:
+// let scramble = (str, arr) => {
+//   let newArr = [];
+//   arr.forEach((num, i) => (newArr[num] = str.at(i)));
+//   return newArr.join("");
+// };
+// console.log(scramble("abcd", [0, 3, 1, 2]));
