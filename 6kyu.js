@@ -61,3 +61,34 @@
 // Answare:
 // let findUniq = (arr) => arr.find((v) => arr.lastIndexOf(v) === arr.indexOf(v));
 // console.log(findUniq([4, 4, "foo", 4]));
+
+// ===========================================================================
+
+// 4.
+// Question:
+// Write Number in Expanded Form
+// You will be given a number and you will need to return it as a string in Expanded Form. For example:
+//    12 --> "10 + 2"
+//    45 --> "40 + 5"
+// 70304 --> "70000 + 300 + 4"
+// NOTE: All numbers will be whole numbers greater than 0.
+
+// Answare:
+// let expandedForm = (num) => {
+//   let str = `${num}`;
+//   let i = str.length - 1;
+//   let newStr = "";
+//   for (let val of str) {
+//     if (+val !== 0) {
+//       newStr += val;
+//       for (let j = 0; j < i; j++) newStr += 0;
+//       newStr += " + ";
+//     }
+//     i--;
+//   }
+//   newStr = newStr.slice(0, newStr.length - 3);
+//   return newStr;
+// };
+// console.log(expandedForm(70304));
+
+// ===========================================================================
