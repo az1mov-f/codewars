@@ -142,3 +142,31 @@
 // };
 
 // ===========================================================================
+
+// 6.
+// Question:
+// https://www.codewars.com/kata/52afd1fe8f7c52a0e1000304/javascript
+
+// Answare:
+// let getAttendees = (peopleInvited, responses) => {
+//   responses.forEach(({ name, response: res }) => {
+//     if (res === "declined" && peopleInvited.includes(name))
+//       peopleInvited.splice(peopleInvited.indexOf(name), 1);
+//   });
+//   return peopleInvited;
+// };
+// getAttendees(
+//   [
+//     "Easter Bunny",
+//     "Tooth Fairy",
+//     "Frosty the Snowman",
+//     "Jack Frost",
+//     "Cupid",
+//     "Father Time",
+//   ],
+//   [
+//     { name: "Easter Bunny", response: "declined" },
+//     { name: "Jack Frost", response: "declined" },
+//     { name: "Tooth Fairy", response: "accepted" },
+//   ]
+// );
