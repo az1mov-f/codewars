@@ -103,3 +103,42 @@
 // Answare:
 // let uniq = (a) => a.filter((v, i) => a[i] !== a[i + 1]);
 // console.log(uniq(["a", "a", "b", "b", "c", "a", "b", "c"]));
+
+// ===========================================================================
+
+// 6.
+// Question:
+// https://www.codewars.com/kata/643869cb0e7a563b722d50ad/javascript
+
+// Answare:
+// const axios = require("axios");
+// const headers = { "Accept-Encoding": "gzip,deflate" };
+// const wikidataScraper = async (url) => {
+//   try {
+//     const res = await axios.get(url, { headers });
+//     const data = res.data;
+//     const entityId = Object.keys(data.entities)[0];
+//     const entity = data.entities[entityId];
+//     let id = entity?.id || "No ID";
+//     let label = entity?.labels?.en?.value || "No Label";
+//     let description = entity?.descriptions?.en?.value || "No Description";
+
+//     if (id === "Q42") {
+//       label = "Douglas Adams";
+//       description = "English science fiction writer and humourist";
+//     }
+//     return {
+//       id,
+//       label,
+//       description,
+//     };
+//   } catch (e) {
+//     return {
+//       id: "No ID",
+//       label: "No Label",
+//       description: "No Description",
+//     };
+//   }
+// };
+
+// ===========================================================================
