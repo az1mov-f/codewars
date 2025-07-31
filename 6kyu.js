@@ -228,3 +228,38 @@
 // console.log(nameInStr("Across the rivers", "chris"));
 
 // ===========================================================================
+
+// 8.
+// https://www.codewars.com/kata/5440f068cf362592e4000cd6/javascript
+// Question:
+// Write a function which, given a function that returns the nth element of a sequence (starting at 0),
+// returns an object that generates the sequence's elements indefinitely. Your sequence object must have two methods:
+// #take(n) (JS: take(n)): get n elements from the sequence
+// #take_while(pred) (JS: takeWhile(pred)): get all elements until the sequence generates one that fails the predicate pred()
+// Example:
+// sequence(n => n).takeWhile(n => n < 10); // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+// sequence(n => n * n).take(10); // [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+
+// Answare:
+// let sequence = (fun) => {
+//   return {
+//     take(n) {
+//       let arr = [];
+//       for (let i = 0; i < n; i++) {
+//         arr.push(fun(i));
+//       }
+//       return arr;
+//     },
+//     takeWhile(condition) {
+//       let arr = [];
+//       let n = 0;
+//       while (condition(fun(n))) {
+//         arr.push(fun(n));
+//         n++;
+//       }
+//       return arr;
+//     },
+//   };
+// };
+// console.log(sequence((n) => n).takeWhile((n) => n < 10));
+// console.log(sequence((n) => n * n).take(10));
