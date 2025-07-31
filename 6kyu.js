@@ -279,3 +279,5 @@
 // Answare:
 // let divisibleCount = (x, y, k) => Math.floor(y / k) - Math.floor((x - 1) / k);
 // console.log(divisibleCount(6, 11, 2));
+
+// ===========================================================================
