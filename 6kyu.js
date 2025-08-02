@@ -281,3 +281,25 @@
 // console.log(divisibleCount(6, 11, 2));
 
 // ===========================================================================
+
+// 10.
+// https://www.codewars.com/kata/59f0ee47a5e12962cb0000bf/javascript
+// Question:
+// Four-digit palindromes start with [1001,1111,1221,1331,1441,1551,1551,...] and the number at position 2 is 1111.
+// You will be given two numbers a and b. Your task is to return the a-digit palindrome at position b if the palindromes were arranged in increasing order.
+// Therefore, palin(4,2) = 1111, because that is the second element of the 4-digit palindrome series.
+// More examples in the test cases. Good luck!
+
+// Answare:
+// let palin = (a, b, count = 0) => {
+//   let half = Math.floor((a + 1) / 2); // Nechta raqamdan boshlab palindrom yaratiladi
+//   let start = Math.pow(10, half - 1);
+//   for (let i = start; ; i++) {
+//     let str = i.toString();
+//     let reversed = str.split("").reverse().join("");
+//     let pal;
+//     a % 2 ? (pal = str + reversed.slice(1)) : (pal = str + reversed);
+//     if (++count === b) return Number(pal);
+//   }
+// };
+// console.log(palin(2, 2));
