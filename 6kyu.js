@@ -303,3 +303,38 @@
 //   }
 // };
 // console.log(palin(2, 2));
+
+// ===========================================================================
+
+// 10.
+// https://www.codewars.com/kata/525b4164eb636fb2f90002a0/javascript
+// Question:
+// In numerology, every number has a certain meaning that expresses someones connection to the universe!
+// This single digit integer can be calculated by adding up every digit in the birthdate: year, month, and date.
+// Task
+// Calculate the single integer digit by adding up every digit in the birthdate:
+// month, date, full year, from left to right (MMDDYYYY). If the sum is greater or equal to 10, add up the two digits of the sum.
+// You will be passed in a Date object corresponding to your language.
+// Example
+// For example, with date '06/14/2010'
+// => 06142010
+
+// Answare:
+// let solution = (date) => {
+//   const MM = String(date.getMonth() + 1).padStart(2, "0");
+//   const DD = String(date.getDate()).padStart(2, "0");
+//   const YYYY = date.getFullYear().toString();
+//   let digits = (MM + DD + YYYY).split("").map(Number);
+//   let sum = digits.reduce((a, b) => a + b, 0);
+//   while (sum > 9) {
+//     sum = sum
+//       .toString()
+//       .split("")
+//       .reduce((a, b) => a + +b, 0);
+//   }
+//   return sum;
+// };
+// console.log(solution(new Date("Thu Nov 20 1986 22:52:41 GMT+0000 (UTC)")));
+// console.log(solution(new Date("06/14/2010")));
+
+// ===========================================================================
