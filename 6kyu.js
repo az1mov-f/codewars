@@ -306,7 +306,7 @@
 
 // ===========================================================================
 
-// 10.
+// 11.
 // https://www.codewars.com/kata/525b4164eb636fb2f90002a0/javascript
 // Question:
 // In numerology, every number has a certain meaning that expresses someones connection to the universe!
