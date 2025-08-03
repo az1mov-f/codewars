@@ -389,3 +389,31 @@
 // console.log(dm.hello());
 
 // ===========================================================================
+
+// 13.
+// https://www.codewars.com/kata/59f38b033640ce9fc700015b/javascript
+// Question:
+// In this Kata, you will be given an integer array and your task is to return the sum of elements occupying prime-numbered indices.
+// The first element of the array is at index 0.
+// Good luck!
+
+// Answare:
+// let total = (arr) => {
+//   let sum = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     if (i > 1) {
+//       let isTrue = true;
+//       for (let j = 2; j < i; j++) {
+//         if (!(i % j)) {
+//           isTrue = false;
+//           break;
+//         }
+//       }
+//       if (isTrue) sum += arr[i];
+//     }
+//   }
+//   return sum;
+// };
+// console.log(total([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]));
+
+// ===========================================================================
