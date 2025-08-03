@@ -338,3 +338,54 @@
 // console.log(solution(new Date("06/14/2010")));
 
 // ===========================================================================
+
+// 12.
+// https://www.codewars.com/kata/5b0a80ce84a30f4762000069/javascript
+// Question:
+// The code provided has a method hello which is supposed to show only those attributes which have been explicitly set.
+// Furthermore, it is supposed to say them in the same order they were set.
+// But it's not working properly.
+// Notes:
+// There are 3 attributes
+// name
+// age
+// sex ('M' or 'F')
+// When the same attribute is assigned multiple times the hello method shows it only once.
+// If this happens the order depends on the first assignment of that attribute, but the value is from the last assignment.
+// Examples:
+// Hello.
+// Hello. My name is Bob. I am 27. I am male.
+// Hello. I am 27. I am male. My name is Bob.
+// Hello. My name is Alice. I am female.
+// Hello. My name is Batman.
+// Task:
+// Fix the code so we can all go home early.
+
+// Answare:
+// class Dinglemouse {
+//   obj = new Map();
+//   setAge(age) {
+//     this.obj.has(age) && this.obj.delete(age);
+//     this.obj.set("age", `I am ${age}.`);
+//     return this;
+//   }
+//   setSex(sex) {
+//     this.obj.has(sex) && this.obj.delete(sex);
+//     this.obj.set("sex", `I am ${sex == "M" ? "male" : "female"}.`);
+//     return this;
+//   }
+//   setName(name) {
+//     this.obj.has(name) && this.obj.delete(name);
+//     this.obj.set("name", `My name is ${name}.`);
+//     return this;
+//   }
+//   hello() {
+//     let res = "";
+//     for (let [key, value] of this.obj) res += value + " ";
+//     return `Hello. ${res}`.trim();
+//   }
+// }
+// let dm = new Dinglemouse().setName("Bob").setAge(35).setName("Jon");
+// console.log(dm.hello());
+
+// ===========================================================================
