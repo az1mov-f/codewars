@@ -417,3 +417,25 @@
 // console.log(total([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]));
 
 // ===========================================================================
+
+// 13.
+// https://www.codewars.com/kata/58d76854024c72c3e20000de/javascript
+// Question:
+// Reverse every other word in a given string, then return the string.
+// Throw away any leading or trailing whitespace, while ensuring there is exactly one space between each word.
+// Punctuation marks should be treated as if they are a part of the word in this kata.
+
+// Answare:
+let reverse = (str) => {
+  let arr = str.trim().split(" ");
+  return arr
+    .map((v, i) => {
+      if (i % 2) return arr[i].split("").reverse().join("");
+      else return arr[i];
+    })
+    .join(" ");
+};
+
+console.log(reverse("I really don't like reversing strings!"));
+
+// ===========================================================================
