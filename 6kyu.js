@@ -426,16 +426,16 @@
 // Punctuation marks should be treated as if they are a part of the word in this kata.
 
 // Answare:
-let reverse = (str) => {
-  let arr = str.trim().split(" ");
-  return arr
-    .map((v, i) => {
-      if (i % 2) return arr[i].split("").reverse().join("");
-      else return arr[i];
-    })
-    .join(" ");
-};
+// let reverse = (str) => {
+//   let arr = str.trim().split(" ");
+//   return arr
+//     .map((v, i) => {
+//       if (i % 2) return arr[i].split("").reverse().join("");
+//       else return arr[i];
+//     })
+//     .join(" ");
+// };
 
-console.log(reverse("I really don't like reversing strings!"));
+// console.log(reverse("I really don't like reversing strings!"));
 
 // ===========================================================================
