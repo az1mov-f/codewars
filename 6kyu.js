@@ -439,3 +439,23 @@
 // console.log(reverse("I really don't like reversing strings!"));
 
 // ===========================================================================
+
+// 13.
+// https://www.codewars.com/kata/5840f47570407f372a00008b/javascript
+// Question:
+
+// // Answare:
+// let mostAppear = (arr) => {
+//   let i = 0;
+//   let res;
+//   for (let num of arr) {
+//     if (i === 0) {
+//       res = num;
+//       i = 1;
+//     } else if (num === res) i++;
+//     else i--;
+//   }
+//   return res;
+// };
+
+// console.log(mostAppear([1, 1, 1, 3, 3, 3, 1, 1, 1, 5, 5, 5, 1, 1]));
