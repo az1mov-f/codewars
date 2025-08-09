@@ -459,3 +459,41 @@
 // };
 
 // console.log(mostAppear([1, 1, 1, 3, 3, 3, 1, 1, 1, 5, 5, 5, 1, 1]));
+
+// ===========================================================================
+
+// 14.
+// https://www.codewars.com/kata/5244b0588978473f9500002b/javascript
+// Question:
+
+// let solution = (data, replace) => {
+//   if (data === null || typeof data !== "object") return data;
+//   for (let key in data) {
+//     let value = data[key];
+//     if (value === "dynamic") data[key] = replace;
+//     else if (Array.isArray(value)) {
+//       value.forEach((item, index) => {
+//         if (item === "dynamic") value[index] = replace;
+//         else if (typeof item === "object") solution(item, replace);
+//       });
+//     } else if (typeof value === "object") solution(value, replace);
+//   }
+//   return data;
+// };
+
+// const data = {
+//   name: "dynamic",
+//   age: 25,
+//   skills: ["JS", "dynamic", "CSS"],
+//   address: {
+//     city: "dynamic",
+//     zip: 10001,
+//     history: [
+//       { year: 2020, place: "dynamic" },
+//       { year: 2021, place: "New York" },
+//     ],
+//   },
+// };
+// console.log(solution(data, "static"));
+
+// ===========================================================================
