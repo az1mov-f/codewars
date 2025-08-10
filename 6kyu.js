@@ -498,3 +498,13 @@
 // console.log(solution(data, "static"));
 
 // ===========================================================================
+
+// 15.
+// https://www.codewars.com/kata/54da5a58ea159efa38000836/javascript
+// Question:
+
+// // Answare:
+// let func = (arr) => arr.reduce((sum, cur) => sum ^ cur, 0);
+// console.log(func([1, 2, 2, 3, 3, 3, 4, 3, 3, 3, 2, 2, 1]));
+
+// ===========================================================================
