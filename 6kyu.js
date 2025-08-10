@@ -503,8 +503,40 @@
 // https://www.codewars.com/kata/54da5a58ea159efa38000836/javascript
 // Question:
 
-// // Answare:
+// Answare:
 // let func = (arr) => arr.reduce((sum, cur) => sum ^ cur, 0);
 // console.log(func([1, 2, 2, 3, 3, 3, 4, 3, 3, 3, 2, 2, 1]));
 
 // ===========================================================================
+
+// 16.
+// hhttps://www.codewars.com/kata/58a6568827f9546931000027/javascript
+// Question:
+
+// Answare - 1:
+// let numberOfCarries = (a, b) => {
+//   let maxLenVal;
+//   let minLenVal;
+//   let count = 0;
+//   let curry = 0;
+//   if (`${a}`.length > `${b}`.length) {
+//     maxLenVal = `${a}`;
+//     minLenVal = `${b}`;
+//   } else {
+//     maxLenVal = `${b}`;
+//     minLenVal = `${a}`;
+//   }
+//   for (let i = 1; i <= maxLenVal.length; i++) {
+//     let sum = +(maxLenVal.at(-i) ?? 0) + +(minLenVal.at(-i) ?? 0) + curry;
+//     if (sum > 9) {
+//       count += parseInt(sum / 10);
+//       curry = parseInt(sum / 10);
+//     } else curry = 0;
+//   }
+//   return count;
+// };
+
+// console.log(numberOfCarries(543, 3456));
+// console.log(numberOfCarries(1927, 6426));
+// console.log(numberOfCarries(9999, 1));
+// console.log(numberOfCarries(1234, 5678));
