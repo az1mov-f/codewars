@@ -536,6 +536,22 @@
 //   return count;
 // };
 
+// Answare - 2:
+// let numberOfCarries = (a, b) => {
+//   let carry = 0,
+//     count = 0;
+//   while (a > 0 || b > 0) {
+//     let sum = (a % 10) + (b % 10) + carry;
+//     if (sum > 9) {
+//       carry = 1;
+//       count++;
+//     } else carry = 0;
+//     a = Math.floor(a / 10);
+//     b = Math.floor(b / 10);
+//   }
+//   return count;
+// };
+
 // console.log(numberOfCarries(543, 3456));
 // console.log(numberOfCarries(1927, 6426));
 // console.log(numberOfCarries(9999, 1));
