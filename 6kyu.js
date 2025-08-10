@@ -556,3 +556,26 @@
 // console.log(numberOfCarries(1927, 6426));
 // console.log(numberOfCarries(9999, 1));
 // console.log(numberOfCarries(1234, 5678));
+
+// ===========================================================================
+
+// 17.
+// hhttps://www.codewars.com/kata/584ebd7a044a1520f20000d5/javascript
+// Question:
+
+// Answare - 1:
+// let range = (...arr) => {
+//   let newArr = [];
+//   if (arr.length == 1) {
+//     for (let i = 1; i <= arr[0]; i++) newArr.push(i);
+//   } else if (arr.length == 2) {
+//     for (let i = arr[0]; i <= arr[1]; i++) newArr.push(i);
+//   } else {
+//     for (let i = arr[0]; i <= arr[2]; i = i + arr[1]) newArr.push(i);
+//   }
+//   return newArr;
+// };
+
+// console.log(range(5));
+// console.log(range(3, 7));
+// console.log(range(2, 3, 15));
