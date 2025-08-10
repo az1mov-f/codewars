@@ -576,6 +576,21 @@
 //   return newArr;
 // };
 
+// Answare - 2:
+// let range = (...arr) => {
+//   let newArr = [];
+//   let [start, step, stop] =
+//     arr.length == 1
+//       ? [1, 1, arr[0]]
+//       : arr.length == 2
+//       ? [arr[0], 1, arr[1]]
+//       : arr;
+//   for (let i = start; i <= stop; i += step) newArr.push(i);
+//   return newArr;
+// };
+
 // console.log(range(5));
 // console.log(range(3, 7));
 // console.log(range(2, 3, 15));
+
+// ===========================================================================
