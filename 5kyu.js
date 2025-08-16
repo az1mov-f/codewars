@@ -9,3 +9,32 @@
 // console.log(moveZeros([false, 1, 0, 1, 2, 0, 1, 3, "a"]));
 
 // ===========================================================================
+
+// 2.
+// Question:
+// https://www.codewars.com/kata/688a614adfe03af512d4458c/javascript
+
+// Given a possibly empty list of strictly positive numbers and a non-negative target number,
+// return either a subset of the list summing to the target, or null or a similar empty value if no such subset exists.
+
+// The subset must consist of unique ( by index ) list elements.
+// If a particular value occurs more than once in the input list, you can use it up to as many times as it occurs.
+// The empty subset sums to 0.
+// If multiple valid subsets exist, return any one of them.
+
+// The target will never be much bigger than the sum of the input list, and often quite a bit smaller.
+
+// Answare:
+// let subsetSum = (nums, target) => {
+//   let newArr = Array(target + 1).fill(null);
+//   newArr[0] = [];
+
+//   for (let num of nums)
+//     for (let i = target; i >= num; i--)
+//       if (newArr[i - num] !== null) newArr[i] = [...newArr[i - num], num];
+
+//   return newArr[target];
+// };
+// console.log(subsetSum([1, 2, 3, 4, 5], 6));
+
+// ===========================================================================
