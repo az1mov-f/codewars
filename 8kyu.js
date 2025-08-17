@@ -55,3 +55,44 @@
 // console.log(reverse("I am an expert at this"));
 
 // ===========================================================================
+
+// 4.
+// Question:
+// https://www.codewars.com/kata/574b1916a3ebd6e4fa0012e7/javascript
+
+// Give you two strings: s1 and s2. If they are opposite, return true; otherwise, return false.
+// Note: The result should be a boolean value, instead of a string.
+// The opposite means: All letters of the two strings are the same, but the case is opposite.
+// You can assume that the string only contains letters or it's a empty string.
+// Also take note of the edge case - if both strings are empty then you should return false/False.
+// Examples (input -> output)
+// "ab","AB"     -> true
+// "aB","Ab"     -> true
+// "aBcd","AbCD" -> true
+// "AB","Ab"     -> false
+// "",""         -> false
+
+// Answare:
+// let isOpposite = (s1, s2) => {
+//   let isTrue = true;
+//   if (s1 && s2 && s1.length == s2.length) {
+//     for (let i = 0; i < s1.length; i++) {
+//       if (!isTrue) break;
+//       s1[i] != s2[i] && s1[i].toUpperCase() == s2[i].toUpperCase()
+//         ? (isTrue = true)
+//         : (isTrue = false);
+//     }
+//     return isTrue;
+//   } else return false;
+// };
+
+// console.log(isOpposite("xpBSHJvVu", "XpbSHjvVU"));
+// console.log(isOpposite("ab", "AB"));
+// console.log(isOpposite("aB", "Ab"));
+// console.log(isOpposite("aBcd", "AbCD"));
+// console.log(isOpposite("aBcde", "AbCD"));
+// console.log(isOpposite("AB", "Ab"));
+// console.log(isOpposite("Ab", "cD"));
+// console.log(isOpposite("", ""));
+
+// ===========================================================================
