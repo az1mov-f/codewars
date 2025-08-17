@@ -111,3 +111,44 @@
 // console.log(removeChar("xyz"));
 
 // ===========================================================================
+
+// 6.
+// Question:
+// https://www.codewars.com/kata/55c933c115a8c426ac000082/javascript
+
+// Switch/Case - Bug Fixing #6
+// Oh no! Timmy's evalObject function doesn't work. He uses Switch/Cases to evaluate the given properties of an object, can you fix timmy's function?
+
+// let evalObject = (obj) => {
+//   var result = 0;
+//   switch (obj.operation) {
+//     case "+":
+//       result = obj.a + obj.b;
+//       break;
+//     case "-":
+//       result = obj.a - obj.b;
+//       break;
+//     case "/":
+//       result = obj.a / obj.b;
+//       break;
+//     case "*":
+//       result = obj.a * obj.b;
+//       break;
+//     case "%":
+//       result = obj.a % obj.b;
+//       break;
+//     case "^":
+//       result = obj.a ** obj.b;
+//       break;
+//   }
+//   return result;
+// };
+
+// console.log(evalObject({ a: 1, b: 1, operation: "+" }));
+// console.log(evalObject({ a: 1, b: 1, operation: "-" }));
+// console.log(evalObject({ a: 1, b: 1, operation: "/" }));
+// console.log(evalObject({ a: 1, b: 1, operation: "*" }));
+// console.log(evalObject({ a: 1, b: 1, operation: "%" }));
+// console.log(evalObject({ a: 1, b: 1, operation: "^" }));
+
+// ===========================================================================
