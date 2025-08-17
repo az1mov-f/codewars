@@ -96,3 +96,18 @@
 // console.log(isOpposite("", ""));
 
 // ===========================================================================
+
+// 5.
+// Question:
+// https://www.codewars.com/kata/56bc28ad5bdaeb48760009b0/javascript
+
+// Answare:
+// let removeChar = (str) => str.slice(1, -1);
+
+// console.log(removeChar("eloquent"));
+// console.log(removeChar("country"));
+// console.log(removeChar("person"));
+// console.log(removeChar("ab"));
+// console.log(removeChar("xyz"));
+
+// ===========================================================================
