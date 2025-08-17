@@ -153,3 +153,24 @@
 // console.log(evalObject({ a: 1, b: 1, operation: "^" }));
 
 // ===========================================================================
+
+// 7.
+// Question:
+// https://www.codewars.com/kata/5721c189cdd71194c1000b9b/javascript
+
+// Answare:
+// let grabDoll = (dolls) => {
+//   let bag = [];
+//   for (let v of dolls) {
+//     if (bag.length == 3) break;
+//     else if (v == "Hello Kitty" || v == "Barbie doll") bag.push(v);
+//     else continue;
+//   }
+//   return bag;
+// };
+
+// console.log(
+//   grabDoll(["Mickey Mouse", "Hello Kitty", "Hello Kitty", "Snow white"])
+// );
+
+// ===========================================================================
