@@ -58,3 +58,23 @@
 //   return x;
 // };
 // console.log(isPrime(19));
+
+// let getPrimes = (start, finish) => {
+//   let max = Math.max(start, finish),
+//     min = Math.min(start, finish);
+//   let arr = [];
+//   for (let i = min; i <= max; i++) {
+//     x = true;
+//     for (let j = 2; j < i; j++) {
+//       if (i % j == 0) {
+//         x = false;
+//         break;
+//       }
+//     }
+//     if (x && i > 1) arr.push(i);
+//   }
+//   return arr;
+// };
+// console.log(getPrimes(0, 30));
+
+// ===========================================================================
