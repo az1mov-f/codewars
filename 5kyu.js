@@ -78,3 +78,21 @@
 // console.log(getPrimes(0, 30));
 
 // ===========================================================================
+
+// 4.
+// Question:
+// https://www.codewars.com/kata/52f787eb172a8b4ae1000a34/javascript
+
+// Answare:
+// let zeros = (n) => {
+//   let count = 0;
+//   while (n > 0) {
+//     n = Math.floor(n / 5);
+//     count += n;
+//   }
+//   return count;
+// };
+
+// console.log(zeros(100));
+
+// ===========================================================================
