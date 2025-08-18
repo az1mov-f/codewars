@@ -38,3 +38,23 @@
 // console.log(subsetSum([1, 2, 3, 4, 5], 6));
 
 // ===========================================================================
+
+// 3.
+// Question:
+// https://www.codewars.com/kata/52dd72494367608ac1000416/javascript
+
+// Answare:
+// let isPrime = (n) => {
+//   let x = false;
+//   if (n > 1) {
+//     for (let i = 2; i < n; i++) {
+//       if (!(n % i)) {
+//         x = false;
+//         break;
+//       } else x = true;
+//     }
+//     if (n == 2) return true;
+//   } else return false;
+//   return x;
+// };
+// console.log(isPrime(19));
