@@ -115,3 +115,28 @@
 // console.log(orderWeight("56 65 74 100 99 68 86 180 90"));
 
 // ===========================================================================
+
+// 6.
+// Question:
+// https://www.codewars.com/kata/530e15517bc88ac656000716/javascript
+
+// Answare:
+// let rot13 = (str) => {
+//   // a-z | 97 - 122
+//   // A-Z | 65 - 90
+//   let newStr = "";
+//   for (let v of str) {
+//     let code = v.charCodeAt();
+//     if (65 <= code && code <= 90)
+//       newStr += String.fromCharCode(code > 77 ? code - 13 : code + 13);
+//     else if (97 <= code && code <= 122)
+//       newStr += String.fromCharCode(code > 109 ? code - 13 : code + 13);
+//     else newStr += v;
+//   }
+//   return newStr;
+// };
+
+// console.log(rot13("test12!")); // grfg12!
+// console.log(rot13("Test12!")); // Grfg12!
+
+// ===========================================================================
