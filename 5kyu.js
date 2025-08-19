@@ -96,3 +96,22 @@
 // console.log(zeros(100));
 
 // ===========================================================================
+
+// 5.
+// Question:
+// https://www.codewars.com/kata/55c6126177c9441a570000cc/javascript
+
+// Answare:
+// let orderWeight = (str) =>
+//   str
+//     .split(" ")
+//     .sort((a, b) => {
+//       let recFunc = (n) => n.split("").reduce((s, d) => s + +d, 0);
+//       let diff = recFunc(a) - recFunc(b);
+//       return diff === 0 ? a.localeCompare(b) : diff;
+//     })
+//     .join(" ");
+
+// console.log(orderWeight("56 65 74 100 99 68 86 180 90"));
+
+// ===========================================================================
