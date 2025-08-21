@@ -183,3 +183,42 @@
 // console.log(fib());
 
 // ===========================================================================
+
+// 9.
+// Question:
+// https://www.codewars.com/kata/59be8c08bf10a49a240000b1/javascript
+
+// Answare:
+// let changeCase = (str, target) => {
+//   if (!str) return "";
+//   if (!["snake", "kebab", "camel"].includes(target)) return undefined;
+//   if (
+//     (str.includes("-") && str.includes("_")) ||
+//     (/[A-Z]/.test(str) && str.includes("-")) ||
+//     (/[A-Z]/.test(str) && str.includes("_"))
+//   )
+//     return undefined;
+
+//   if (target == "snake")
+//     return str.includes("-")
+//       ? str.replace(/-/g, "_")
+//       : str.replace(/([A-Z])/g, "_$1").toLowerCase();
+
+//   if (target == "kebab")
+//     return str.includes("_")
+//       ? str.replace(/_/g, "-")
+//       : str.replace(/([A-Z])/g, "-$1").toLowerCase();
+
+//   if (target == "camel")
+//     return str.replace(/[-_]([a-z])/g, (_, c) => c.toUpperCase());
+
+//   return undefined;
+// };
+
+// console.log(changeCase("snakeCase", "snake"));
+// console.log(changeCase("some-lisp-name", "camel"));
+// console.log(changeCase("map_to_all", "kebab"));
+// console.log(changeCase("doHTMLRequest", "kebab"));
+// console.log(changeCase("invalid-inPut_bad", "kebab"));
+// console.log(changeCase("valid-input", "huh???"));
+// console.log(changeCase("", "camel"));
