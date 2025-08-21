@@ -140,3 +140,21 @@
 // console.log(rot13("Test12!")); // Grfg12!
 
 // ===========================================================================
+
+// 7.
+// Question:
+// https://www.codewars.com/kata/5547cc7dcad755e480000004/javascript
+
+// Answare:
+// let removeNb = (n, arr = []) => {
+//   let sum = (n * (n + 1)) / 2;
+//   for (let a = 1; a <= n; a++) {
+//     let b = (sum - a) / (a + 1);
+//     if (Number.isInteger(b) && b <= n) arr.push([a, b]);
+//   }
+//   return arr;
+// };
+
+// console.log(removeNb(26));
+
+// ===========================================================================
