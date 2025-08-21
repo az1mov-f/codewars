@@ -158,3 +158,28 @@
 // console.log(removeNb(26));
 
 // ===========================================================================
+
+// 8.
+// Question:
+// https://www.codewars.com/kata/522498c9906b0cfcb40001fc/javascript
+
+// Answare:
+// let genfib = () => {
+//   let a = 0,
+//     b = 1;
+//   return function fib() {
+//     let cur = a;
+//     [a, b] = [b, a + b];
+//     return cur;
+//   };
+// };
+
+// let fib = genfib();
+
+// console.log(fib());
+// console.log(fib());
+// console.log(fib());
+// console.log(fib());
+// console.log(fib());
+
+// ===========================================================================
