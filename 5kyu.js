@@ -190,8 +190,8 @@
 
 // Answare:
 // let changeCase = (str, target) => {
-  //   if (!str) return "";
-  //   if (!["snake", "kebab", "camel"].includes(target)) return undefined;
+//   if (!str) return "";
+//   if (!["snake", "kebab", "camel"].includes(target)) return undefined;
 //   if (
 //     (str.includes("-") && str.includes("_")) ||
 //     (/[A-Z]/.test(str) && str.includes("-")) ||
@@ -224,3 +224,31 @@
 // console.log(changeCase("", "camel"));
 
 // ===========================================================================
+
+// 9.
+// Question:
+// https://www.codewars.com/kata/5270d0d18625160ada0000e4/javascript
+
+// Answare:
+// let score = (dice) => {
+//   const count = Array(7).fill(0);
+//   for (let d of dice) count[d]++;
+//   let total = 0;
+//   if (count[1] >= 3) {
+//     total += 1000;
+//     count[1] -= 3;
+//   }
+//   for (let i = 2; i <= 6; i++) {
+//     if (count[i] >= 3) {
+//       total += i * 100;
+//       count[i] -= 3;
+//     }
+//   }
+//   total += count[1] * 100;
+//   total += count[5] * 50;
+//   return total;
+// };
+
+// console.log(score([5, 1, 3, 4, 1])); // 250
+// console.log(score([1, 1, 1, 3, 1])); // 1100
+// console.log(score([2, 4, 4, 5, 4])); // 450
