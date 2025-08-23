@@ -274,3 +274,26 @@
 // console.log(validISBN10("ABCDEFGHIJ")); // false
 
 // ===========================================================================
+
+// 11.
+// Question:
+// https://www.codewars.com/kata/51fc12de24a9d8cb0e000001/javascript
+
+// Answare:
+// let sortByName = (arr)=> {
+//   const ones = ["zero","one","two","three","four","five","six","seven","eight","nine",
+//                 "ten","eleven","twelve","thirteen","fourteen","fifteen",
+//                 "sixteen","seventeen","eighteen","nineteen"];
+//   const tens = ["","","twenty","thirty","forty","fifty","sixty","seventy","eighty","ninety"];
+
+//   const toWords = (n) =>
+//     n < 20 ? ones[n] :
+//     n < 100 ? tens[Math.floor(n/10)] + (n%10 ? " " + ones[n%10] : "") :
+//     ones[Math.floor(n/100)] + " hundred" + (n%100 ? " " + toWords(n%100) : "");
+
+//   return arr.slice().sort((a, b) => toWords(a).localeCompare(toWords(b)));
+// }
+
+// console.log(sortByName([1,2,3,4]));     // [4, 1, 3, 2]
+// console.log(sortByName([99,101,120]));  // [101, 120, 99]
+// console.log(sortByName([]));            // []
