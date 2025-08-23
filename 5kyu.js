@@ -254,3 +254,23 @@
 // console.log(score([2, 4, 4, 5, 4])); // 450
 
 // ===========================================================================
+
+// 10.
+// Question:
+// https://www.codewars.com/kata/51fc12de24a9d8cb0e000001/javascript
+
+// Answare:
+// let validISBN10 = (str, sum = 0) => {
+//   if (str.length != 10 || (str.includes("X") && str.indexOf("X") != 9))
+//     return false;
+//   Array.from(str).forEach((v, i) => (sum += +(v == "X" ? 10 : v) * (i + 1)));
+//   if (isNaN(sum)) return false;
+//   if (sum % 11) return false;
+//   else return true;
+// };
+
+// console.log(validISBN10("1112223339")); // true
+// console.log(validISBN10("048665088X")); // true
+// console.log(validISBN10("ABCDEFGHIJ")); // false
+
+// ===========================================================================
