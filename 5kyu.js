@@ -281,12 +281,12 @@
 
 // Answare:
 // let sortByName = (arr)=> {
-//   const ones = ["zero","one","two","three","four","five","six","seven","eight","nine",
+//   let ones = ["zero","one","two","three","four","five","six","seven","eight","nine",
 //                 "ten","eleven","twelve","thirteen","fourteen","fifteen",
 //                 "sixteen","seventeen","eighteen","nineteen"];
-//   const tens = ["","","twenty","thirty","forty","fifty","sixty","seventy","eighty","ninety"];
+//   let tens = ["","","twenty","thirty","forty","fifty","sixty","seventy","eighty","ninety"];
 
-//   const toWords = (n) =>
+//   let toWords = (n) =>
 //     n < 20 ? ones[n] :
 //     n < 100 ? tens[Math.floor(n/10)] + (n%10 ? " " + ones[n%10] : "") :
 //     ones[Math.floor(n/100)] + " hundred" + (n%100 ? " " + toWords(n%100) : "");
