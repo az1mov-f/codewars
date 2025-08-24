@@ -299,3 +299,21 @@
 // console.log(sortByName([]));            // []
 
 // ===========================================================================
+
+// https://www.codewars.com/kata/614ac445f13ead000f91b4d0/javascript
+
+// 12.
+// Question:
+// let valueOfX = (str) => {
+//   let [a, b] = str.split(" = ");
+//   let hasXLeft = a.includes("x");
+//   let exprWithX = hasXLeft ? a : b;
+//   let exprWithoutX = hasXLeft ? b : a;
+//   let exprValue = eval(exprWithX.replace(/x/g, "0"));
+//   let otherValue = eval(exprWithoutX);
+//   let coeff = eval(exprWithX.replace(/x/g, "1")) - exprValue;
+//   return (otherValue - exprValue) / coeff;
+// };
+
+// Answare:
+// console.log(valueOfX("0 + 1 = x - 9 - 2"));
