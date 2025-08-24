@@ -317,3 +317,9 @@
 
 // Answare:
 // console.log(valueOfX("0 + 1 = x - 9 - 2"));
+// console.log(valueOfX("x = + 2 - 5 + 9"));
+// console.log(valueOfX("0 + 1 - x = 9 - 2"));
+// console.log(valueOfX("- x = - 1"));
+// console.log(valueOfX("- 10 = x"));
+
+// ===========================================================================
