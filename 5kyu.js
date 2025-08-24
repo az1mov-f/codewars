@@ -323,3 +323,39 @@
 // console.log(valueOfX("- 10 = x"));
 
 // ===========================================================================
+
+// 13.
+// Question:
+// https://www.codewars.com/kata/526dbd6c8c0eb53254000110/javascript
+
+// 48 - 57 | 1 - 9
+// 65 - 90 | A - Z
+// 97 - 122 | a - z
+
+// Answare:
+// let alphanumeric = (str) => {
+//   let isAlphanumeric;
+//   if (str) {
+//     for (let v of str) {
+//       let i = v.charCodeAt();
+//       if ((i >= 48 && i <= 57) || (i >= 65 && i <= 90) || (i >= 97 && i <= 122))
+//         isAlphanumeric = true;
+//       else return false;
+//     }
+//   } else return false;
+//   return isAlphanumeric;
+// };
+
+// console.log(alphanumeric("PassW0rd."));
+// console.log(alphanumeric("Mazinkaiser"));
+// console.log(alphanumeric("hello world_"));
+// console.log(alphanumeric("PassW0rd"));
+// console.log(alphanumeric("     "));
+// console.log(alphanumeric(""));
+// console.log(alphanumeric("\n\t\n"));
+// console.log(alphanumeric("ciao\n$$_"));
+// console.log(alphanumeric("__ * __"));
+// console.log(alphanumeric("&)))((("));
+// console.log(alphanumeric("43534h56jmTHHF3k"));
+
+// ===========================================================================
