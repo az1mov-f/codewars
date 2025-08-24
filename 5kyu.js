@@ -359,3 +359,26 @@
 // console.log(alphanumeric("43534h56jmTHHF3k"));
 
 // ===========================================================================
+
+// 14.
+// Question:
+// https://www.codewars.com/kata/5266fba01283974e720000fa/javascript
+
+// Answare:
+// let variance = (arr) => {
+//   const n = arr.length;
+//   const mean = arr.reduce((a, b) => a + b, 0) / n;
+//   const sumSq = arr.reduce((sum, v) => sum + (v - mean) ** 2, 0);
+//   return +(sumSq / n).toFixed(4);
+// };
+
+// console.log(variance([1, 2, 2, 3]));
+// console.log(variance([-10, 0, 10, 20, 30]));
+// console.log(variance([8, 9, 10, 11, 12]));
+// console.log(variance([1.5, 2.5, 4, 2, 1, 1]));
+// console.log(variance([10, 20, 50, 0, -100]));
+// console.log(variance([1, 2]));
+// console.log(variance([-1, -10, -500]));
+// console.log(variance([800]));
+
+// ===========================================================================
