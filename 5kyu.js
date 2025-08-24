@@ -300,10 +300,11 @@
 
 // ===========================================================================
 
-// https://www.codewars.com/kata/614ac445f13ead000f91b4d0/javascript
-
 // 12.
 // Question:
+// https://www.codewars.com/kata/614ac445f13ead000f91b4d0/javascript
+
+// Answare:
 // let valueOfX = (str) => {
 //   let [a, b] = str.split(" = ");
 //   let hasXLeft = a.includes("x");
@@ -315,7 +316,6 @@
 //   return (otherValue - exprValue) / coeff;
 // };
 
-// Answare:
 // console.log(valueOfX("0 + 1 = x - 9 - 2"));
 // console.log(valueOfX("x = + 2 - 5 + 9"));
 // console.log(valueOfX("0 + 1 - x = 9 - 2"));
