@@ -185,3 +185,24 @@
 // console.log(animal({ name: "dog", legs: 4, color: "white" })); // "This white dog has 4 legs."
 
 // ===========================================================================
+
+// 9.
+// Question:
+// https://www.codewars.com/kata/5722b3f0bd5583cf44001000/javascript
+
+// Answare:
+// let giveMeFive = (obj, arr = []) => {
+//   for (let key in obj) {
+//     if (key.length == 5 && obj[key].length == 5) {
+//       arr.push(key);
+//       arr.push(obj[key]);
+//     } else if (key.length == 5) arr.push(key);
+//     else if (obj[key].length == 5) arr.push(obj[key]);
+//   }
+//   return arr;
+// };
+
+// console.log(giveMeFive({ Our: "earth", is: "a", beautyful: "world" }));
+// console.log(giveMeFive({ Pears: "than", apple: "sweet" }));
+
+// ===========================================================================
