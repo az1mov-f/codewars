@@ -174,3 +174,14 @@
 // );
 
 // ===========================================================================
+
+// 8.
+// Question:
+// https://www.codewars.com/kata/571f1eb77e8954a812000837/javascript
+
+// Answare:
+// let animal = (obj) => `This ${obj.color} ${obj.name} has ${obj.legs} legs.`;
+
+// console.log(animal({ name: "dog", legs: 4, color: "white" })); // "This white dog has 4 legs."
+
+// ===========================================================================
