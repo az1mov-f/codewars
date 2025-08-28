@@ -382,3 +382,30 @@
 // console.log(variance([800]));
 
 // ===========================================================================
+
+// 14.
+// Question:
+// https://www.codewars.com/kata/585d8c8a28bc7403ea0000c3/javascript
+
+// Answare:
+// let findUniq = (arr) => {
+//   let obj = {};
+//   arr.forEach((str) => {
+//     if (str) {
+//       for (let s of str) {
+//         let miniS = s.toLowerCase();
+//         if (obj[miniS]) obj[miniS] += 1;
+//         else obj[miniS] = 1;
+//       }
+//     }
+//   });
+//   let min = Math.min(...Object.values(obj));
+//   for (let key in obj)
+//     if (obj[key] === min)
+//       return arr.find((str) => str.toLowerCase().includes(key) && str);
+// };
+
+// console.log(findUniq(["abc", "acb", "bac", "foo", "bca", "cab", "cba"]));
+// console.log(findUniq(["Aa", "aaa", "aaaaa", "BbBb", "Aaaa", "AaAaAa", "a"]));
+
+// ===========================================================================
