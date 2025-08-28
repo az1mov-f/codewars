@@ -436,3 +436,25 @@
 // console.log(generateHashtag("")); // false
 
 // ===========================================================================
+
+// 17.
+// Question:
+// https://www.codewars.com/kata/52bc74d4ac05d0945d00054e/javascript
+
+// Answare:
+// let firstNonRepeatingLetter = (str) => {
+//   if (!str) return "";
+//   let newStr = str.toLowerCase();
+//   let counts = {};
+//   for (let ch of newStr) counts[ch] = (counts[ch] || 0) + 1;
+//   for (let i = 0; i < str.length; i++)
+//     if (counts[newStr[i]] == 1) return str[i];
+//   return "";
+// };
+
+// console.log(firstNonRepeatingLetter("<A4]Y~x)9{C<;<]f~x4YAelf"));
+// console.log(firstNonRepeatingLetter("a"));
+// console.log(firstNonRepeatingLetter("stress"));
+// console.log(firstNonRepeatingLetter("moonmen"));
+
+// ===========================================================================
