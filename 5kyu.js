@@ -409,3 +409,30 @@
 // console.log(findUniq(["Aa", "aaa", "aaaaa", "BbBb", "Aaaa", "AaAaAa", "a"]));
 
 // ===========================================================================
+
+// 16.
+// Question:
+// https://www.codewars.com/kata/52449b062fb80683ec000024/javascript
+
+// Answare:
+// let generateHashtag = (str, newStr = "#") => {
+//   if (isNaN(str)) {
+//     let arr = str.split(" ");
+//     arr.forEach((s) => {
+//       if (s) {
+//         s = s[0].toUpperCase() + s.slice(1);
+//         newStr += s;
+//       }
+//     });
+//     if (newStr.length > 140) return false;
+//     return newStr;
+//   }
+//   return false;
+// };
+
+// console.log(generateHashtag(" Hello there thanks for trying my Kata")); // "#HelloThereThanksForTryingMyKata"
+// console.log(generateHashtag("    Hello     World   ")); // "#HelloWorld"
+// console.log(generateHashtag(" ")); // false
+// console.log(generateHashtag("")); // false
+
+// ===========================================================================
