@@ -458,3 +458,33 @@
 // console.log(firstNonRepeatingLetter("moonmen"));
 
 // ===========================================================================
+
+// 18.
+// Question:
+// https://www.codewars.com/kata/523d2e964680d1f749000135/javascript
+
+// Answare:
+// let interleave = (...arr) => {
+//   arr.forEach((a) => {
+//     if (!a.length) return [];
+//   });
+//   let res = [];
+//   let newArr = [];
+//   arr.forEach((a) => a.length > newArr.length && (newArr = a));
+//   for (let i = 0; i < newArr.length; i++) {
+//     arr.forEach((a) => {
+//       if (a[i] || a[i] == 0) res.push(a[i]);
+//       else res.push(null);
+//     });
+//   }
+//   return res;
+// };
+
+// console.log(interleave([1, 2, 3], ["c", "d", "e"])); // [1, "c", 2, "d", 3, "e"]
+// console.log(interleave([1, 2, 3], [4, 5])); // [1, 4, 2, 5, 3, null]
+// console.log(interleave([1, 2], [3, 4, 5])); // [1, 3, 2, 4, null, 5]
+// console.log(interleave([null], [null, null], [null, null, null])); // Array(9).fill(null)
+// console.log(interleave([1, 2, 3], [4, 5, 6], [7, 8, 9])); // [1, 4, 7, 2, 5, 8, 3, 6, 9]
+// console.log(interleave([])); // []
+
+// ===========================================================================
