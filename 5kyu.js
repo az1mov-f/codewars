@@ -488,3 +488,30 @@
 // console.log(interleave([])); // []
 
 // ===========================================================================
+
+// 19.
+// Question:
+// https://www.codewars.com/kata/5279f6fe5ab7f447890006a7/javascript
+
+// Answare:
+// let pickPeaks = (arr) => {
+//   let pos = [],
+//     peaks = [];
+//   let candidate = null;
+//   for (let i = 1; i < arr.length; i++) {
+//     if (arr[i] > arr[i - 1]) candidate = i;
+//     if (arr[i] < arr[i - 1] && candidate !== null) {
+//       pos.push(candidate);
+//       peaks.push(arr[candidate]);
+//       candidate = null;
+//     }
+//   }
+//   return { pos, peaks };
+// };
+
+// console.log(pickPeaks([3, 2, 3, 6, 4, 1, 2, 3, 2, 1, 2, 3]));
+// console.log(pickPeaks([1, 2, 2, 2, 1]));
+// console.log(pickPeaks([0, 1, 2, 5, 1, 0]));
+// console.log(pickPeaks([1, 2, 2, 2, 3]));
+
+// ===========================================================================
