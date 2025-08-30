@@ -12,3 +12,29 @@
 // console.log(
 //   sumStrings("50095301248058391139327916261", "81055900096023504197206408605")
 // );
+
+// ===========================================================================
+
+// 2.
+// Question:
+// https://www.codewars.com/kata/51e056fe544cf36c410000fb
+
+// Answare:
+// let topThreeWords = (str) => {
+//   str = str.toLowerCase().replace(/[^a-z']/g, " ");
+//   let arr = str.split(/\s+/);
+//   let obj = {};
+//   arr.forEach((s) => {
+//     if (s.replace(/'/g, "") === "") return;
+//     obj[s] ? (obj[s] += 1) : (obj[s] = 1);
+//   });
+//   return Object.entries(obj)
+//     .sort((a, b) => b[1] - a[1])
+//     .slice(0, 3)
+//     .map((a) => a[0]);
+// };
+
+// console.log(test("e e e e DDD ddd DdD: ddd ddd aa aA Aa, bb cc cC e e e"));
+// console.log(test("a a a  b  c c  d d d d  e e e e e"));
+
+// ===========================================================================
