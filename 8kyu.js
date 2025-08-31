@@ -237,3 +237,24 @@
 // }
 
 // ===========================================================================
+
+// 11.
+// Question:
+// https://www.codewars.com/kata/56cd44e1aa4ac7879200010b/javascript
+
+// Answare:
+// String.prototype.isUpperCase = function () {
+//   let res = true;
+//   for (let v of this) {
+//     if (v != v.toUpperCase()) {
+//       res = false;
+//       break;
+//     }
+//   }
+//   return res;
+// };
+
+// console.log("ACSKLDFJSgSKLDFJSKLDFJ".isUpperCase());
+// console.log("ACSKLDFJSGSKLDFJSKLDFJ".isUpperCase());
+
+// ===========================================================================
