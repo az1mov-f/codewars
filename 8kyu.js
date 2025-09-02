@@ -278,3 +278,23 @@
 // console.log(cookie([]));
 
 // ===========================================================================
+
+// 13.
+// Question:
+// https://www.codewars.com/kata/54edbc7200b811e956000556/javascript
+
+// Answare:
+// let countSheeps = (arr) => arr.filter((v) => v).length;
+
+// console.log(
+//   countSheeps([
+//   true,  true,  true,  false,
+//   true,  true,  true,  true,
+//   true,  false, true,  false,
+//   true,  false, false, true,
+//   true,  true,  true,  true,
+//   false, false, true,  true
+// ])
+// );
+
+// ===========================================================================
