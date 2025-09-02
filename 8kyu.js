@@ -274,5 +274,6 @@
 // console.log(cookie(11));
 // console.log(cookie(15.5));
 // console.log(cookie(true));
+// console.log(cookie({name:"Eshmat"}));
 
 // ===========================================================================
