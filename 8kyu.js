@@ -258,3 +258,21 @@
 // console.log("ACSKLDFJSGSKLDFJSKLDFJ".isUpperCase());
 
 // ===========================================================================
+
+// 12.
+// Question:
+// https://www.codewars.com/kata/55a996e0e8520afab9000055/javascript
+
+// Answare:
+// let cookie = (x) => {
+//   if (typeof x == "string") return "Who ate the last cookie? It was Zach!";
+//   if (typeof x == "number") return "Who ate the last cookie? It was Monica!";
+//   return "Who ate the last cookie? It was the dog!";
+// };
+
+// console.log(cookie("Ryan"));
+// console.log(cookie(11));
+// console.log(cookie(15.5));
+// console.log(cookie(true));
+
+// ===========================================================================
