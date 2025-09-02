@@ -38,3 +38,28 @@
 // console.log(test("a a a  b  c c  d d d d  e e e e e"));
 
 // ===========================================================================
+
+// 3.
+// Question:
+// https://www.codewars.com/kata/52f677797c461daaf7000740/javascript
+
+// Answare:
+// let solution = (arr) => {
+//   let gcd = (a, b) => {
+//     while (b) {
+//       let t = b;
+//       b = a % b;
+//       a = t;
+//     }
+//     return a;
+//   };
+//   let g = arr[0];
+//   for (let i = 1; i < arr.length; i++) g = gcd(g, arr[i]);
+//   return g * arr.length;
+// };
+
+// console.log(solution([60, 12, 96, 48, 60, 24, 72, 36, 72, 72, 48]));
+// console.log(solution([71, 71, 71, 71, 71, 71, 71, 71, 71, 71, 71, 71, 71]));
+// console.log(solution([6, 9, 12]));
+
+// ===========================================================================
