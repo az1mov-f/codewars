@@ -316,14 +316,14 @@
 // https://www.codewars.com/kata/570597e258b58f6edc00230d/solutions/javascript
 
 // Answare:
-// let test = (str) => {
+// let array = (str) => {
 //   let arr = str.split(",");
 //   if (arr.length < 3) return null;
 //   return arr.splice(1, arr.length - 2).join(" ");
 // };
 
-// console.log(test("1,2,3,4,5"));
-// console.log(test("1,2"));
-// console.log(test(""));
+// console.log(array("1,2,3,4,5"));
+// console.log(array("1,2"));
+// console.log(array(""));
 
 // ===========================================================================
