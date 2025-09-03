@@ -298,3 +298,15 @@
 // );
 
 // ===========================================================================
+
+// 14.
+// Question:
+// https://www.codewars.com/kata/573f5c61e7752709df0005d2/javascript
+
+// Answare:
+// let mergeArrays = (a, b) => Array.from(new Set([...a, ...b])).sort((a, b) => a - b);
+
+// console.log(mergeArrays([1, 3, 5], [2, 4, 6]));
+// console.log(mergeArrays([2, 4, 8], [2, 4, 6]);
+
+// ===========================================================================
