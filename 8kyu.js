@@ -355,3 +355,16 @@
 // console.log(whoIsPaying("Ali"));
 
 // ===========================================================================
+
+// 18.
+// Question:
+// https://www.codewars.com/kata/5866fc43395d9138a7000006/javascript
+
+// Answare:
+// let ensureQuestion = (s) => (s.endsWith("?") ? s : `${s}?`);
+
+// console.log(ensureQuestion(""));
+// console.log(ensureQuestion("Yes"));
+// console.log(ensureQuestion("No?"));
+
+// ===========================================================================
