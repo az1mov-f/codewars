@@ -339,3 +339,19 @@
 // console.log(areaOrPerimeter(6, 10));
 
 // ===========================================================================
+
+// 17.
+// Question:
+// https://www.codewars.com/kata/58bf9bd943fadb2a980000a7/solutions/javascript
+
+// Answare:
+// let whoIsPaying = (name) => {
+//   if (name.length > 2) return [name, name.slice(0, 2)];
+//   return [name];
+// };
+
+// console.log(whoIsPaying("Al"));
+// console.log(whoIsPaying("Firdavs"));
+// console.log(whoIsPaying("Ali"));
+
+// ===========================================================================
